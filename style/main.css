@@ -1,0 +1,178 @@
+/* Setando as variáveis do projeto */
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+
+}
+
+/* Reset do CSS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Setando o cor e as fontes do body, elementos base*/
+body{
+    background: linear-gradient(rgba(0,0,0,.20), rgba(255,215,0,.12)30%), url("../img/backgrounds/back2.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover; /*método para a imagem ocupar todo o tamanho selecionado */
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+/*Conceitos de flex, para a primeira div */
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center; /* Vertical*/
+    justify-content: space-between; /* Horizontal*/
+}
+
+/*Setando o estilo do logo */
+header .logo{
+    margin-left:8px;
+    color: yellow;
+    font-family: "Arial Black", Times;
+    font-size:40px;
+
+
+}
+/*Setando o estilo dos conteúdos das âncoras*/
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+    font-weight:bold;
+}
+
+/*Setando uma cor ao passar o mouse sobre as âncoras */
+header nav a:hover{
+    color:#fff;
+}
+
+/*Filme Principal*/
+
+.filmePrincipal{
+    font-size: 16px;
+    /* Setando a imagem de fundo e colocando uma camada de degrade na imagem para dar destaque as letras */
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/dark-background.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-size:cover; /*método para a imagem ocupar todo o tamanho selecionado */
+    box-shadow:  0 0 1em yellow, 0 0 1em black;
+    
+    /*A altura que a imagem vai ocupar */
+    height:400px;
+    
+    margin-top: 10px;
+    /*Flex box*/
+    display: flex;
+    flex-direction: column; /* Inversão dos alinhamentos */
+    justify-content: center;
+    align-items: flex-start;  /*Começando os elementos da esquerda*/
+
+}
+
+
+/*Distanciamento dos botões */
+.filmePrincipal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+/*Tamanho do titulo*/
+.filmePrincipal .titulo{
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+/* Estilo dos botões */
+.container .botao{
+    background-color: rgba(0,0,0,.47);
+    border:none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight:bold;
+    
+    /* Mudar o cursos do mouse quando passar sobre o elemento */
+    cursor:pointer;
+    /*Tempo de animção do hover*/
+    transition: .3s ease all;
+}
+
+/* Mudar de cor sobre os botões quando passar emcima */
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+/*margem dos icones*/
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filmePrincipal .container{
+    width: 70%;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    -webkit-box-shadow: 9px 7px 5px rgba(255,215,0, 0.50);
+    -moz-box-shadow:    9px 7px 5px black;
+    margin-left: 5px;
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.carrosel-filmes .container{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.texto-rodape{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.click-git{
+    padding-bottom: 15px;
+}
+
+.github{
+    text-align: center;
+
+}
+
+.github a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+
+

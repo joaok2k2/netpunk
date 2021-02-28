@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
         <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
         
+        <script type="text/javascript" src="./js/main.js"></script>
 
         <title>Netpunk</title>
     </head>
@@ -22,9 +23,9 @@
                 <h2 class="logo">NETPUNK</h2>
                 <nav>
                     <a href="#">Inicio</a>
-                    <a href="#">Séries</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Documentários</a>
+                    <a href="https://www.themoviedb.org/tv?language=pt-BR" target="_blank">Séries</a>
+                    <a href="https://www.themoviedb.org/movie?language=pt-BR" target="_blank">Filmes</a>
+                    <a href="https://www.imdb.com/search/title/?genres=documentary" target="_blank">Documentários</a>
                 </nav>
             </div>
         </header>
@@ -35,11 +36,11 @@
                     <p class="descricao">O desaparecimento recente de crianças na pequena cidade alemã de Winden remete a acontecimentos idênticos ocorridos há 33 anos e 66 anos e coloca quatro famílias no centro de uma teia de mistérios envolvendo uma misteriosa caverna, uma usina nuclear suspeita e um estranho homem recém-chegado na cidade.</p>
                     
                     <div class="botoes">
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" onclick="botao_trailer_dark()">
                             <i class="fas fa-play"></i>
                             ASSISTIR AGORA
                         </button>
-                        <button role="button" class="botao"> 
+                        <button role="button" class="botao" onclick="botao_more_dark()"> 
                             <i class="fas fa-info-circle"></i>
                             MAIS INFORMAÇÕES
                         </button>
@@ -52,34 +53,34 @@
                 <h3 class="container">Séries</h3>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <img class="box-filme" src="./img/mini1.jpg" alt="Riverdale" srcset="">
+                        <img class="box-filme" src="./img/Series/mini1.jpg" alt="Riverdale" srcset="" onclick="series(1)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini2.jpg" alt="The Walking Dead" srcset="">
+                        <img class="box-filme" src="./img/Series/mini2.jpg" alt="The Walking Dead" srcset="" onclick="series(2)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini3.jpg" alt="Legado" srcset="">
+                        <img class="box-filme" src="./img/Series/mini3.jpg" alt="Legado" srcset="" onclick="series(3)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini4.jpg" alt="Greys Anatomy" srcset="">
+                        <img class="box-filme" src="./img/Series/mini4.jpg" alt="Greys Anatomy" srcset="" onclick="series(4)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini5.jpg" alt="MacGyver" srcset="">
+                        <img class="box-filme" src="./img/Series/mini5.jpg" alt="MacGyver" srcset="" onclick="series(5)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini6.jpg" alt="The Order" srcset="">
+                        <img class="box-filme" src="./img/Series/mini6.jpg" alt="The Order" srcset="" onclick="series(6)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini7.jpg" alt="SnowPiercer" srcset="">
+                        <img class="box-filme" src="./img/Series/mini7.jpg" alt="SnowPiercer" srcset="" onclick="series(7)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini8.jpg" alt="The Expanse" srcset="">
+                        <img class="box-filme" src="./img/Series/mini8.jpg" alt="The Expanse" srcset="" onclick="series(8)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini9.jpg" alt="American Gods" srcset="">
+                        <img class="box-filme" src="./img/Series/mini9.jpg" alt="American Gods" srcset="" onclick="series(9)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini10.jpg" alt="Mr. Robot" srcset="">
+                        <img class="box-filme" src="./img/Series/mini10.jpg" alt="Mr. Robot" srcset="" onclick="series(10)">
                     </div>
                 </div>
             </div>
@@ -89,52 +90,52 @@
                 <h3 class="container">Filmes</h3>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <img class="box-filme" src="./img/mini1.jpg" alt="Riverdale" srcset="">
+                        <img class="box-filme" src="./img/films/mini1.jpg" alt="Monster Hunter" srcset="" onclick="filmes(1)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini2.jpg" alt="The Walking Dead" srcset="">
+                        <img class="box-filme" src="./img/films/mini2.jpg" alt="Medo da Chuva" srcset="" onclick="filmes(2)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini3.jpg" alt="Legado" srcset="">
+                        <img class="box-filme" src="./img/films/mini3.jpg" alt="Os pequenos vestígios" srcset="" onclick="filmes(3)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini4.jpg" alt="Greys Anatomy" srcset="">
+                        <img class="box-filme" src="./img/films/mini4.jpg" alt="Tom & Jerry" srcset="" onclick="filmes(4)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini5.jpg" alt="MacGyver" srcset="">
+                        <img class="box-filme" src="./img/films/mini5.jpg" alt="Caythnk" srcset="" onclick="filmes(5)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini6.jpg" alt="The Order" srcset="">
+                        <img class="box-filme" src="./img/films/mini6.jpg" alt="Judas e o Messias Negro" srcset="" onclick="filmes(6)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini7.jpg" alt="SnowPiercer" srcset="">
+                        <img class="box-filme" src="./img/films/mini7.jpg" alt="Wrong Turn" srcset="" onclick="filmes(7)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini8.jpg" alt="The Expanse" srcset="">
+                        <img class="box-filme" src="./img/films/mini8.jpg" alt="Mulher-maravilha 1984" srcset=""onclick="filmes(8)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini9.jpg" alt="American Gods" srcset="">
+                        <img class="box-filme" src="./img/films/mini9.jpg" alt="Jumanji nivel um" srcset="" onclick="filmes(9)">
                     </div>
                     <div class="item">
-                        <img class="box-filme" src="./img/mini10.jpg" alt="Mr. Robot" srcset="">
+                        <img class="box-filme" src="./img/films/mini10.jpg" alt="Nomadland" srcset="" onclick="filmes(10)">
                     </div>
                 </div>
             </div>
-
-            <footer>
-                <div class="rodape">
-                    <p class="texto-rodape">Criado por joaok2k2.</p>
-                    <div class="click-git">
-                        <nav class="github">
-                            <a href="https://www.github.com/joaok2k2" target="_blank"><i class="fab fa-github"></i> GITHUB</a>
-                        </nav>
-                    </div>
-                </div>
-            </footer>
         </main>
+        <footer class="container-rodape">
+            <div class="rodape">
+                <p class="texto-rodape">Criado por joaok2k2.</p>
+                <div class="click-git">
+                    <nav class="github">
+                        <a href="https://www.github.com/joaok2k2" target="_blank"><i class="fab fa-github"></i> GITHUB</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
         <!-- Owl JS -->
         <script src="./js/owl/jquery.min.js"></script>
         <script src="./js/owl/owl.carousel.min.js"></script>
         <script src="./js/setup.js"></script>
+       
     </body>
 </html>

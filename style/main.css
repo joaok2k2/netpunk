@@ -196,3 +196,32 @@ header nav a:hover{
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);
     padding-top: 1px;
 }
+
+
+body[dark]{
+    background: white;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover; /*método para a imagem ocupar todo o tamanho selecionado */
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+
+body[dark] header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+    font-weight:bold;
+}
+
+/*Setando uma cor ao passar o mouse sobre as âncoras */
+body[dark] header nav a:hover{
+    color:black;
+}
+
+
+#input-dark-mode{
+    height: 1px;
+    width: 1px;
+}
